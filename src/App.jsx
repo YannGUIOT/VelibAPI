@@ -1,7 +1,5 @@
 import { Map } from './Components/Map/Map'
 import { Stations } from './Components/Stations/Stations';
-// import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import './App.css'
 import { useEffect, useState } from 'react';
 
