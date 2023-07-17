@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: rgb(255, 248, 238);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,20 +14,6 @@
   margin: auto;
   border-radius: 5px;
   box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
-}
-
-#stations{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.block-station{
-  margin:20px;
-  padding: 10px;
-  height: 320px;
-  width: 250px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -79,7 +65,7 @@ h1 {
 }
 
 .colored {
-  background-color: rgb(255, 231, 199);
+  background-color: rgb(253, 236, 213);
 }
 
 .italique {
