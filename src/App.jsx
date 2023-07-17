@@ -26,7 +26,7 @@ export const App = () => {
     fetchAPI();
 
     // Fetch the API every 10 seconds
-    const interval = setInterval(fetchAPI, 10000);
+    const interval = setInterval(fetchAPI, 30000);
 
     // Clean up function
     return () => {
@@ -36,6 +36,7 @@ export const App = () => {
 
   return (
     <>
+      <h1>Disponibilité des Vélib sur Paris</h1>
       <Map stations={stations} />
       <Stations stations={stations} />
     </>
