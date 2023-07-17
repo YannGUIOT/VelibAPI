@@ -4,3 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+
+#mapid { 
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
