@@ -1,26 +1,24 @@
 import PropTypes from 'prop-types';
 
 export const Stations = ({ stations }) => {
+  const sortedStations = stations.slice().sort((a, b) => a.name.localeCompare(b.name));
+
   return (
-    <div id="stations">
-      {stations.map((station) => (
-        <div className="block-station" key={station.name}>
-          <h2 className="station-title">{station.name}</h2>
-          <h4>
-            <u>Vélibs Disponibles</u>
-          </h4>
-          <p>
-            Classic : <strong>{station.mechanical}</strong> - Electric : <strong>{station.ebike}</strong>
-          </p>
-          <h4>
-            <u>Docks Disponibles</u>
-          </h4>
-          <p>
-            <strong>{station.numdocksavailable}</strong>
-          </p>
+    <>
+      <h1>Les Stations Vélib</h1>
+      <div className='line-station bold'>
+        <div className='name-station'>STATION</div>
+        <div className='velib-mechanical'>VÉLIB<br />CLASSIQUE</div>
+        <div className='velib-ebike'>VÉLIB<br />ÉLECTRIQUE</div>
+      </div>
+      {sortedStations.map((station) => (
+        <div className='line-station' key={station.name}>
+          <div className='name-station bold'>{station.name}</div>
+          <div className='velib-mechanical'>{station.mechanical}</div>
+          <div className='velib-ebike'>{station.ebike}</div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

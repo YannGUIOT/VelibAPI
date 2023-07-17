@@ -1,13 +1,12 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  background-color: antiquewhite;
 }
 
 #mapid { 
-  height: 500px;
-  width: 900px;
+  height: 600px;
+  width: 1000px;
   margin: auto;
   border-radius: 5px;
   box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
@@ -35,6 +34,30 @@ h4 {
   color: rgb(34, 34, 116);
 }
 
-strong {
-  font-size: x-large;
+.line-station {
+  min-height: 2em;
+  width: 40em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(145, 145, 145);
+}
+
+.name-station {
+  width: 20em;
+}
+
+.velib-mechanical {
+  width: 10em;
+  border-right: 1px solid rgb(145, 145, 145);
+  border-left: 1px solid rgb(145, 145, 145);
+}
+
+.velib-ebike {
+  width: 10em;
+}
+
+.bold {
+  font-weight: bold;
 }
