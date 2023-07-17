@@ -1,7 +1,8 @@
-import { Map } from './Components/Map/Map'
 import { Stations } from './Components/Stations/Stations';
-import './App.css'
 import { useEffect, useState } from 'react';
+import { Map } from './Components/Map/Map';
+import './App.css'
+
 
 export const App = () => {
 
