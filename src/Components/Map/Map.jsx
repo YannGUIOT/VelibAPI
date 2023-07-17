@@ -41,7 +41,7 @@ export const Map = ({ stations }) => {
     };
   }, [stations]);
 
-  return <div id="mapid" style={{ height: '400px' }} ref={mapRef}></div>;
+  return <div id="mapid" ref={mapRef}></div>;
 };
 
 

@@ -34,7 +34,7 @@ export const App = () => {
 
   return (
     <>
-      <h1>Disponibilité des Vélib sur Paris</h1>
+      <h1>Disponibilité des Vélib en Île-de-France</h1>
       <Map stations={stations} />
       <Stations stations={stations} />
     </>
