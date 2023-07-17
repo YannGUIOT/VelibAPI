@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import PropTypes from 'prop-types';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
 export const Map = ({ stations }) => {
   
