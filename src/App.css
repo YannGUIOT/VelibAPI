@@ -2,6 +2,9 @@
   margin: 0 auto;
   text-align: center;
   background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #mapid { 
