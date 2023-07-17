@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 #mapid { 
@@ -38,29 +39,60 @@ h4 {
 }
 
 .line-station {
-  min-height: 2em;
-  width: 40em;
+  height: 2em;
+  width: 45em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(145, 145, 145);
+  font-weight: bold;
+}
+
+.height3 {
+  height: 3em;
 }
 
 .name-station {
-  width: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 23em;
+  height: 2em;
 }
 
 .velib-mechanical {
-  width: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 11em;
   border-right: 1px solid rgb(145, 145, 145);
   border-left: 1px solid rgb(145, 145, 145);
 }
 
 .velib-ebike {
-  width: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 11em;
 }
 
-.bold {
-  font-weight: bold;
+.colored {
+  background-color: rgb(255, 231, 199);
+}
+
+.italique {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.unavailable {
+  color: rgb(122, 122, 122);
+  font-weight: lighter;
 }

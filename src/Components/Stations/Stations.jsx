@@ -6,21 +6,29 @@ export const Stations = ({ stations }) => {
   return (
     <>
       <h1>Les Stations Vélib</h1>
-      <div className='line-station bold'>
-        <div className='name-station'>STATION</div>
-        <div className='velib-mechanical'>VÉLIB<br />CLASSIQUE</div>
-        <div className='velib-ebike'>VÉLIB<br />ÉLECTRIQUE</div>
+      <div className='line-station'>
+        <div className='name-station italique'>Nom de la Station</div>
+        <div className='velib-mechanical colored'>VÉLIB CLASSIQUE</div>
+        <div className='velib-ebike colored'>VÉLIB ÉLECTRIQUE</div>
       </div>
       {sortedStations.map((station) => (
         <div className='line-station' key={station.name}>
-          <div className='name-station bold'>{station.name}</div>
-          <div className='velib-mechanical'>{station.mechanical}</div>
-          <div className='velib-ebike'>{station.ebike}</div>
+          <div className={`name-station colored ${station.mechanical === 0 && station.ebike === 0 ? 'unavailable' : ''}`}>
+            {station.name}
+          </div>
+          <div className={`velib-mechanical ${station.mechanical === 0 ? 'unavailable' : ''}`}>
+            {station.mechanical}
+          </div>
+          <div className={`velib-ebike ${station.ebike === 0 ? 'unavailable' : ''}`}>
+            {station.ebike}
+          </div>
         </div>
       ))}
+      <br/>
     </>
   );
 };
+
 
 
 Stations.propTypes = {
