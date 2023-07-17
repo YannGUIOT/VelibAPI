@@ -75,6 +75,7 @@ h1 {
 }
 
 .unavailable {
-  color: rgb(112, 112, 112);
+  color: rgb(114, 99, 99);
   font-weight: lighter;
+  background-color: rgb(230, 224, 215);
 }
