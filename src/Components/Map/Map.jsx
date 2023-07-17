@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import PropTypes from 'prop-types';
 
 export const Map = ({ stations }) => {
   
@@ -41,4 +42,16 @@ export const Map = ({ stations }) => {
   }, [stations]);
 
   return <div id="mapid" style={{ height: '400px' }} ref={mapRef}></div>;
+};
+
+
+Map.propTypes = {
+  stations: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      ebike: PropTypes.number.isRequired,
+      mechanical: PropTypes.number.isRequired,
+      coordonnees_geo: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
+    })
+  ).isRequired,
 };

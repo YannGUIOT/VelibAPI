@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Stations = ({ stations }) => {
   return (
     <div id="stations">
@@ -20,4 +22,16 @@ export const Stations = ({ stations }) => {
       ))}
     </div>
   );
+};
+
+
+Stations.propTypes = {
+  stations: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      mechanical: PropTypes.number.isRequired,
+      ebike: PropTypes.number.isRequired,
+      numdocksavailable: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
