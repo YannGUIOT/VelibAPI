@@ -1,7 +1,6 @@
 import { Stations } from './Components/Stations/Stations';
 import { useEffect, useState } from 'react';
 import { Map } from './Components/Map/Map';
-import './assets/font/Astrolab.ttf';
 import './App.css'
 
 

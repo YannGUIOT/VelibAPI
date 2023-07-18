@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Astrolab";
-  src: url("font/Astrolab.ttf") format("truetype");
+  src: url("../../assets/font/Astrolab.ttf") format("truetype");
 }
 
 #root {
