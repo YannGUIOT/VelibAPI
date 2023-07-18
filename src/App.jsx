@@ -1,11 +1,12 @@
 import { Stations } from './Components/Stations/Stations';
 import { useEffect, useState } from 'react';
 import { Map } from './Components/Map/Map';
-import './assets/font/Astrolab.ttf';
 import './App.css'
 
 
 export const App = () => {
+
+  window.scrollTo(0, 0);
 
   const [stations, setStations] = useState([]);
 
@@ -39,7 +40,7 @@ export const App = () => {
       <h1>Disponibilité des Vélib en Île-de-France</h1>
       <Map stations={stations} />
       <Stations stations={stations} />
-      <p className='footer'>API EXAMPLE BY : <a href='https://yannguiot.github.io/'>YANN GUIOT - FULLSTACK WEB DEVELOPER</a></p>
+      <p className='footer'>API EXAMPLE BY : <a href='https://yannguiot.github.io/' target="_blank">YANN GUIOT - FULLSTACK WEB DEVELOPER</a></p>
     </>
   );
 };
