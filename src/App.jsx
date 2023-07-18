@@ -38,6 +38,7 @@ export const App = () => {
       <h1>Disponibilité des Vélib en Île-de-France</h1>
       <Map stations={stations} />
       <Stations stations={stations} />
+      <p className='footer'>API EXAMPLE BY : <a href='https://yannguiot.github.io/'>YANN GUIOT - FULLSTACK WEB DEVELOPER</a></p>
     </>
   );
 };

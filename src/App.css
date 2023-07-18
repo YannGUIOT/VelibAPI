@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Astrolab";
+  src: url("font/Astrolab.ttf") format("truetype");
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
@@ -78,4 +83,10 @@ h1 {
   color: rgb(114, 99, 99);
   font-weight: lighter;
   background-color: rgb(230, 224, 215);
+}
+
+.footer {
+  font-family: Astrolab;
+  font-size: 0.6em;
+  color: rgb(56, 56, 112);
 }
