@@ -38,8 +38,6 @@ export const App = () => {
 
   const changeCount = (n) => {
     if (((count+n) >= 50) && ((count+n) <= 800)) {setCount(count+n)}
-    // if ((count+n) == 0 && (count > 99)) {setCount(count+(n/10))}
-    // if ((count < 100) && (count > 10)) {setCount(count+(n/10))}
   }
 
   return (
