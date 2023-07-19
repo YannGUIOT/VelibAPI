@@ -6,8 +6,6 @@ import './App.css'
 
 export const App = () => {
 
-  window.scrollTo(0, 0);
-
   const [stations, setStations] = useState([]);
   const [count, setCount] = useState(200);
 
