@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  color: black;
 }
 
 #mapid { 
@@ -29,7 +30,6 @@ h1 {
   align-items: center;
   border: 1px solid rgb(145, 145, 145);
   font-weight: bold;
-  color: black;
 }
 
 .height3 {
@@ -85,4 +85,15 @@ h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 0.9em;
   color: rgb(56, 56, 112);
+}
+
+.count button {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.font-xl {
+  font-size: x-large;
 }

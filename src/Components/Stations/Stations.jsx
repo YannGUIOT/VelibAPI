@@ -5,7 +5,7 @@ export const Stations = ({ stations }) => {
 
   return (
     <>
-      <h1>Les Stations Vélib</h1>
+      <h1>Disponibilités:</h1>
       <div className='line-station'>
         <div className='name-station italique'>Nom de la Station</div>
         <div className='velib-mechanical colored'>VÉLIB CLASSIQUE</div>
