@@ -17,7 +17,6 @@ export const App = () => {
       fetch(url)
         .then((response) => response.json())
         .then((response) => {
-          console.log(response);
           const stationsData = response.records.slice(0, 1465).map((record) => record.fields);
           setStations(stationsData);
         })
