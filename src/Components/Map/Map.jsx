@@ -13,13 +13,11 @@ export const Map = ({ stations }) => {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(mymap);
 
-    // Add marker & popup to the map
     const addMarkerToMap = (station) => {
       const marker = L.marker([station.coordonnees_geo[0], station.coordonnees_geo[1]]).addTo(mymap);
       marker.bindPopup(`${station.name} : ${station.ebike} ebike - ${station.mechanical} bike`);
     };
 
-    // Make user position on the map
     navigator.geolocation.getCurrentPosition((position) => {
       const circle = L.circle([position.coords.latitude, position.coords.longitude], {
         color: 'red',
@@ -30,12 +28,10 @@ export const Map = ({ stations }) => {
       circle.bindPopup('Your position').openPopup();
     });
 
-    // Add markers for each station
     stations.forEach((station) => {
       addMarkerToMap(station);
     });
 
-    // Clean up function
     return () => {
       mymap.remove();
     };

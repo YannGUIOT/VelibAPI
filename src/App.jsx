@@ -26,7 +26,6 @@ export const App = () => {
 
     const interval = setInterval(fetchAPI, 60000);
 
-    // Clean up function
     return () => {
       clearInterval(interval);
     };
