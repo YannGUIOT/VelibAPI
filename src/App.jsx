@@ -24,10 +24,8 @@ export const App = () => {
         .catch((error) => console.error(`ERROR: ${error}`));
     };
 
-    // Fetch the API on component mount
     fetchAPI();
 
-    // Fetch the API every 60 seconds
     const interval = setInterval(fetchAPI, 60000);
 
     // Clean up function
