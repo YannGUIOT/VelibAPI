@@ -45,9 +45,9 @@ export const App = () => {
       <h1>Vélib en Île-de-France</h1>
       <div className='count'>
         <p>Nombre de Stations affichées:</p>
-        <p className='font-xl'><strong>{count}</strong></p>
-        <button onClick={()=>{changeCount(-50)}}>-</button>
-        <button onClick={()=>{changeCount(50)}}>+</button>
+        <button onClick={()=>{changeCount(-50)}} className={count === 50 ? 'stop-count' : ''}>-</button>
+        <strong className='font-xl'> {count} </strong>
+        <button onClick={()=>{changeCount(50)}} className={count === 800 ? 'stop-count' : ''}>+</button>
       </div>
       <Map stations={stations} />
       <Stations stations={stations} />
