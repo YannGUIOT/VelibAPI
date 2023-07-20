@@ -7,7 +7,7 @@ export const Stations = ({ stations }) => {
     <>
       <h1>Disponibilités:</h1>
       <div className='line-station'>
-        <div className='name-station italique'>Stations :</div>
+        <div className='name-station italique gray'>Stations :</div>
         <div className='velib-mechanical colored'>VÉLIB CLASSIQUE</div>
         <div className='velib-ebike colored'>VÉLIB ÉLECTRIQUE</div>
       </div>
