@@ -76,9 +76,9 @@ h1 {
 }
 
 .unavailable {
-  color: rgb(114, 99, 99);
+  color: rgb(170, 50, 50);
   font-weight: lighter;
-  background-color: rgb(230, 224, 215);
+  background-color: rgb(240, 240, 240);
 }
 
 .footer {
