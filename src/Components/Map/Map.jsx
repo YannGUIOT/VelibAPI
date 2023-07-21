@@ -25,7 +25,10 @@ export const Map = ({ stations }) => {
         fillOpacity: 0.5,
         radius: 100,
       }).addTo(mymap);
-      circle.bindPopup('Your position').openPopup();
+
+      circle.bindPopup('Your position');
+      // circle.bindPopup('Your position').openPopup(); 
+      // => displays the user's location if geolocation is enabled
     });
 
     stations.forEach((station) => {
