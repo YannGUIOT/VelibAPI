@@ -15,7 +15,7 @@ export const Map = ({ stations }) => {
 
     const addMarkerToMap = (station) => {
       const marker = L.marker([station.coordonnees_geo[0], station.coordonnees_geo[1]]).addTo(mymap);
-      marker.bindPopup(`${station.name} : ${station.ebike} ebike - ${station.mechanical} bike`);
+      marker.bindPopup(`${station.name} : ${station.mechanical} bike - ${station.ebike} ebike`);
     };
 
     navigator.geolocation.getCurrentPosition((position) => {
