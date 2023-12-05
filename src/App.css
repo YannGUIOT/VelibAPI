@@ -5,15 +5,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   color: black;
 }
 
 /* PETITS ECRANS */
 @media only screen and (max-width: 1040px) {
   #mapid { 
-    height: 300px;
-    width: 500px;
+    height: 325px;
+    width: 550px;
+  }
+
+  #root {
+    padding: 5%;
   }
 }
 
@@ -22,6 +25,10 @@
   #mapid { 
     height: 600px;
     width: 1000px;
+  }
+
+  #root {
+    width: 100vw;
   }
 }
 
