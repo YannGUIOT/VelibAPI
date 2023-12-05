@@ -9,9 +9,23 @@
   color: black;
 }
 
+/* PETITS ECRANS */
+@media only screen and (max-width: 1040px) {
+  #mapid { 
+    height: 300px;
+    width: 500px;
+  }
+}
+
+/* GRANDS ECRANS */
+@media only screen and (min-width: 1041px) {
+  #mapid { 
+    height: 600px;
+    width: 1000px;
+  }
+}
+
 #mapid { 
-  height: 600px;
-  width: 1000px;
   margin: auto;
   border-radius: 12px;
   box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.4);
