@@ -10,10 +10,12 @@
 
 /* PETITS ECRANS */
 @media only screen and (max-width: 1040px) {
+
   #mapid { 
     height: 350px;
     width: 600px;
   }
+  
   #root {
     padding: 5%;
   }
